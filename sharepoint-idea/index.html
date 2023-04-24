@@ -11,7 +11,7 @@ body {
 }
 
 </style>
-<textarea>
+<pre>
 
 # markdown title
 
@@ -26,14 +26,7 @@ a regular paragraph
 
 > "a quote"
 
-</textarea>
+</pre>
 <script src="./marked.min.js"></script>
-<script>
-    "use strict"
-    const el = document.getElementsByTagName('textarea')[0];
-    const md = document.createElement('div');
-    md.innerHTML = marked.parse(el.textContent);
-    document.body.insertBefore(md, el);
-    el.remove();
-</script>
+<script src="./wikify.js"></script>
 </html>
