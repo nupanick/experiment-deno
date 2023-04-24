@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<title>Sharepoint-friendly Wiki Template</title>
+<style>
+
+body {
+    background: #000;
+    color: #888;
+    width: 40rem;
+    margin: auto;
+}
+
+</style>
+<textarea>
+
+# markdown title
+
+## subtitle
+
+etc etc
+
+- list
+- list 2
+
+a regular paragraph
+
+> "a quote"
+
+</textarea>
+<script src="./marked.min.js"></script>
+<script>
+    "use strict"
+    const el = document.getElementsByTagName('textarea')[0];
+    const md = document.createElement('div');
+    md.innerHTML = marked.parse(el.textContent);
+    document.body.insertBefore(md, el);
+    el.remove();
+</script>
+</html>

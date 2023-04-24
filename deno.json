@@ -1,5 +1,9 @@
 {
     "imports": {
-        "std/": "https://deno.land/std@0.179.0/"
+        "std/": "https://deno.land/std@0.179.0/",
+        "webview": "https://deno.land/x/webview@0.7.5/mod.ts"
+    },
+    "tasks": {
+        "app": "deno run --allow-all --unstable app.ts"
     }
 }
